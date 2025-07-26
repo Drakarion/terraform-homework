@@ -30,3 +30,8 @@ variable "ports" {
 variable "ec2_config" {
   type = map(string)
 }
+
+variable "key_name" {
+  type        = string
+  description = "SSH key pair name for EC2 access"
+}
